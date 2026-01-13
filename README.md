@@ -20,7 +20,7 @@ RESTful Web Services for managing costs and generating reports.
 
 \## Team
 
-\- Ofir Nesher
+- Ofir Nesher
 - Asaf Arusi
 
 
