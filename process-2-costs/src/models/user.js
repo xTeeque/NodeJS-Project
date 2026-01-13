@@ -1,6 +1,13 @@
+/*
+ * User Model
+ * We need this model here to check if user exists
+ * before adding a cost item for them
+ */
+
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
+    // our custom id (not the MongoDB _id)
     id: {
         type: Number,
         required: true,
@@ -20,5 +27,5 @@ const userSchema = new mongoose.Schema({
     }
 });
 
-
+// 'users' is the collection name in MongoDB
 module.exports = mongoose.model('User', userSchema, 'users');
